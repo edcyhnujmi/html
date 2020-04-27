@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  <!--  -->
+  <title>Product</title>
+  <!-- <link href="" rel="stylesheet" type="text/css" /> -->
+  <style>
+    .nav-background{
+      background-color:rgba(0, 0, 0, .90);
+      position: sticky;
+      top:0;
+      z-index: 1;
+    }
+    .nav{
+      display: flex;
+      height:3rem;
+      background: transparent;
+      font-family: Georgia;
+      justify-content: space-around;
+      margin: auto;
+      max-width: 65rem;
+    }
+    .nav-item{
+      cursor: pointer;
+      background: none;
+      height:2rem;
+      color: gray;
+      margin-top:1rem;
+      margin-bottom:0;
+      text-align: center;
+      letter-spacing:.1rem;
+    }
+    .nav-item:hover{
+      color: #F0F0F0;
+      transition-property: color;
+      transition-duration: 0.15s;
+    }
+    .nav-left-item{
+      display: flex;
+      margin-left: auto;
+    }
+    .nav-center-item{
+      display: flex;
+    }
+    .nav-right-item{
+      display: flex;
+      margin-right: auto;
+    }
+    body{
+      margin:0;
+      font-family: Georgia;
+    }
+    .main-article{
+      position: relative;
+      padding:2rem;
+      margin: 1rem;
+      background-color: #f8f9fa;
+      overflow: hidden;
+    }
+    .main-article-pic-left{
+      position: absolute;
+      width: 17rem;
+      background-color: #E8E8E8;
+      height: 26rem;
+      transform: rotate(30deg);
+      top: -54%;
+      border-style: solid;
+      border-width: 4rem 1rem;
+      border-color: #E5E5E5;
+      border-radius: 1rem;
+      left: 5%;
+    }
+    .main-article-pic-right{
+      position: absolute;
+      width: 17rem;
+      background-color: #484848;
+      height: 26rem;
+      transform: rotate(30deg);
+      right: 5%;
+      bottom: -54%;
+      border-style: solid;
+      border-width: 4rem 1rem;
+      border-color: #333333;
+      border-radius: 1rem;;
+    }
+    .main-article-content{
+      text-align: center;
+      padding: 1rem;
+      margin: 3rem 30%;
+    }
+    .main-article-title{
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-top: 0;
+      font-weight: 300;
+    }
+    .main-article-subtitle{
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    .main-article-button{
+      font-family: Georgia;
+      font-size: 1rem;
+      color: #6c757d;
+      width: 9rem;
+      height: 2rem;
+      cursor: pointer;
+      border: thin solid #6c757d;
+      border-radius: .3rem;
+      padding-top:.7rem;
+      margin: auto;
+      background-color: transparent;
+    }
+    a{
+      display: block;
+    }
+    .main-article-button:hover{
+      color: white;
+      background-color: #6c757d;
+      background-image: none;
+      border-color: #6c757d;
+      transition-property: background-color, color;
+      transition-duration: .2s, .2s;
+    }
+    .main-article-button:active{
+      box-shadow: 0 0 .05rem .3rem rgba(217, 217, 217, 1);
+      transition-property: box-shadow;
+      transition-duration: .2s;
+    }
+    .two-articles{
+      display: flex;
+    }
+    .article-item{
+      color: white;
+      width: 50%;
+      height: 30rem;
+      padding: 1rem;
+      margin: 1rem;
+      background-color: #343a40;
+      overflow: hidden;
+    }
+    .gray{
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    .blue{
+      background-color: #007bff;
+    }
+    .article-item-head{
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    .article-item-subhead{
+      font-weight: 200;
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 3rem;
+    }
+    .article-item-box-white{
+      background-color: #f8f9fa;
+      width: 80%;
+      height: 20.2rem;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 1rem 1rem 0 0;
+    }
+    .article-item-box-black{
+      background-color: #343a40;
+      width: 80%;
+      height: 20.2rem;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 1rem 1rem 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-background">
+    <div class="nav">
+        <div class="nav-item">Logo!</div>
+        <div class="nav-item">Tour</div>
+        <div class="nav-item">Product</div>
+        <div class="nav-item">Features</div>
+        <div class="nav-item">Enterprise</div>
+        <div class="nav-item">Support</div>
+        <div class="nav-item">Pricing</div>
+        <div class="nav-item">Cart</div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="main-article">
+      <div class="main-article-pic-left"></div>
+      <div class="main-article-content">
+        <h1 class="main-article-title">Punny headline</h1>
+        <p class="main-article-subtitle">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+      <a class="main-article-button">Coming soon</a>
+      </div>
+      <div class="main-article-pic-right"></div>
+    </div>
+<!--  -->
+    <div class="two-articles"> <!-- From here -->
+      <div class="article-item">
+        <div class="article-item-head">headline one</div>
+        <div class="article-item-subhead">subheading one</div>
+        <div class="article-item-box-white"></div>
+      </div>
+      <!-- <div class="gray__background-color article-item-one"> -->
+      <div class="article-item gray ">
+        <div class="article-item-head">headline two</div>
+        <div class="article-item-subhead">subheading two</div>
+        <div class="article-item-box-black"></div>
+      </div>
+    </div> <!-- to here *4 -->
+    <div class="two-articles"> <!-- From here -->
+      <div class="article-item gray">
+        <div class="article-item-head">headline one</div>
+        <div class="article-item-subhead">subheading one</div>
+        <div class="article-item-box-black"></div>
+      </div>
+      <div class="article-item blue">
+        <div class="article-item-head">headline two</div>
+        <div class="article-item-subhead">subheading two</div>
+        <div class="article-item-box-white"></div>
+      </div>
+    </div> <!-- to here *4 -->
+    <div class="two-articles"> <!-- From here -->
+      <div class="article-item">
+        <div class="article-item-head">headline one</div>
+        <div class="article-item-subhead">subheading one</div>
+        <div class="article-item-box-white"></div>
+      </div>
+      <div class="article-item">
+        <div class="article-item-head">headline two</div>
+        <div class="article-item-subhead">subheading two</div>
+        <div class="article-item-box-white"></div>
+      </div>
+    </div> <!-- to here *4 -->
+    <div class="two-articles"> <!-- From here -->
+      <div class="article-item">
+        <div class="article-item-head">headline one</div>
+        <div class="article-item-subhead">subheading one</div>
+        <div class="article-item-box-white"></div>
+      </div>
+      <div class="article-item">
+        <div class="article-item-head">headline two</div>
+        <div class="article-item-subhead">subheading two</div>
+        <div class="article-item-box-white"></div>
+      </div>
+    </div> <!-- to here *4 -->
+    <div class="two-articles"> <!-- From here -->
+      <div class="article-item">
+        <div class="article-item-head">headline one</div>
+        <div class="article-item-subhead">subheading one</div>
+        <div class="article-item-box-white"></div>
+      </div>
+      <div class="article-item">
+        <div class="article-item-head">headline two</div>
+        <div class="article-item-subhead">subheading two</div>
+        <div class="article-item-box-white"></div>
+      </div>
+    </div> <!-- to here *4 -->
+  </div>
+</body>
+</html>
