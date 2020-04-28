@@ -12,6 +12,7 @@
       position: sticky;
       top:0;
       z-index: 1;
+
     }
     .nav{
       display: flex;
@@ -139,7 +140,6 @@
       padding: 1rem;
       margin: 1rem;
       background-color: #343a40;
-      overflow: hidden;
     }
     .gray{
       background-color: #f8f9fa;
@@ -177,19 +177,43 @@
       margin-left: auto;
       border-radius: 1rem 1rem 0 0;
     }
+    @media(max-width:800px){
+      .main-article{
+        margin: 0;
+      }
+      .main-article-pic-left{
+        display: none;
+      }
+      .main-article-pic-right{
+        display: none;
+      }
+      .main-article-content{
+        margin: auto;
+      }
+      .two-articles{
+        display:block;
+      }
+      .article-item{
+        width: auto;
+        margin: 0;
+      }
+      .dis-none{
+        display:none;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="nav-background">
     <div class="nav">
         <div class="nav-item">Logo!</div>
-        <div class="nav-item">Tour</div>
-        <div class="nav-item">Product</div>
-        <div class="nav-item">Features</div>
-        <div class="nav-item">Enterprise</div>
-        <div class="nav-item">Support</div>
-        <div class="nav-item">Pricing</div>
-        <div class="nav-item">Cart</div>
+        <div class="nav-item dis-none">Tour</div>
+        <div class="nav-item dis-none">Product</div>
+        <div class="nav-item dis-none">Features</div>
+        <div class="nav-item dis-none">Enterprise</div>
+        <div class="nav-item dis-none">Support</div>
+        <div class="nav-item dis-none">Pricing</div>
+        <div class="nav-item dis-none">Cart</div>
     </div>
   </div>
   <div class="main">
@@ -203,20 +227,19 @@
       <div class="main-article-pic-right"></div>
     </div>
 <!--  -->
-    <div class="two-articles"> <!-- From here -->
+    <div class="two-articles">
       <div class="article-item">
         <div class="article-item-head">headline one</div>
         <div class="article-item-subhead">subheading one</div>
         <div class="article-item-box-white"></div>
       </div>
-      <!-- <div class="gray__background-color article-item-one"> -->
       <div class="article-item gray ">
         <div class="article-item-head">headline two</div>
         <div class="article-item-subhead">subheading two</div>
         <div class="article-item-box-black"></div>
       </div>
-    </div> <!-- to here *4 -->
-    <div class="two-articles"> <!-- From here -->
+    </div>
+    <div class="two-articles">
       <div class="article-item gray">
         <div class="article-item-head">headline one</div>
         <div class="article-item-subhead">subheading one</div>
@@ -227,8 +250,8 @@
         <div class="article-item-subhead">subheading two</div>
         <div class="article-item-box-white"></div>
       </div>
-    </div> <!-- to here *4 -->
-    <div class="two-articles"> <!-- From here -->
+    </div>
+    <div class="two-articles">
       <div class="article-item">
         <div class="article-item-head">headline one</div>
         <div class="article-item-subhead">subheading one</div>
@@ -239,8 +262,8 @@
         <div class="article-item-subhead">subheading two</div>
         <div class="article-item-box-white"></div>
       </div>
-    </div> <!-- to here *4 -->
-    <div class="two-articles"> <!-- From here -->
+    </div>
+    <div class="two-articles">
       <div class="article-item">
         <div class="article-item-head">headline one</div>
         <div class="article-item-subhead">subheading one</div>
@@ -251,8 +274,8 @@
         <div class="article-item-subhead">subheading two</div>
         <div class="article-item-box-white"></div>
       </div>
-    </div> <!-- to here *4 -->
-    <div class="two-articles"> <!-- From here -->
+    </div>
+    <div class="two-articles">
       <div class="article-item">
         <div class="article-item-head">headline one</div>
         <div class="article-item-subhead">subheading one</div>
@@ -263,7 +286,7 @@
         <div class="article-item-subhead">subheading two</div>
         <div class="article-item-box-white"></div>
       </div>
-    </div> <!-- to here *4 -->
+    </div>
   </div>
 </body>
 </html>
