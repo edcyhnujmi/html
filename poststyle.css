@@ -6,16 +6,20 @@ body {
 }
 .nav-top {
   display: flex;
-  padding: 1rem 0;
+  padding: .9rem 0;
   justify-content: space-between;
 }
-.nav-subscribe, .nav-search {
+.nav-subscribe {
   margin-top: .7rem;
   color: gray;
   cursor: pointer;
 }
 .nav-subscribe:hover {
   text-decoration: underline;
+}
+svg {
+  margin: 0 .5rem;
+  cursor: pointer;
 }
 .nav-title {
   padding-left: 2rem;
@@ -26,6 +30,7 @@ body {
 }
 .nav-right {
   display: flex;
+  align-items: center;
 }
 .nav-btn {
   display: block;
@@ -63,9 +68,6 @@ body {
 }
 .nav-item:hover {
   text-decoration: underline;
-}
-.nav-search {
-  margin: auto 1rem;
 }
 .main-post {
   padding: 3rem;
@@ -244,4 +246,37 @@ body {
   padding-left: 0;
   margin-top: 1rem;
   line-height: 1.5rem;
+}
+
+@media(max-width:770px) {
+  body {
+    max-width: 32rem;
+  }
+  .main-post {
+    padding: 1.5rem;
+
+  }
+  .main-post-title {
+    width: 100%;
+  }
+  .main-post-text {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .wrap {
+    display :block;
+  }
+  .post {
+    max-width: none;
+    height: auto;
+  }
+  .post-content {
+    width: auto;
+  }
+  img {
+    display: none;
+  }
+  .side {
+    max-width: none;
+  }
 }
